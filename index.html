@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+Aurora Image Gallery Pro
+</title>
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet"
+href="css/style.css">
+
+</head>
+
+<body>
+
+<!-- ===========================
+LOADER
+=========================== -->
+
+<div class="loader-wrapper">
+
+    <div class="loader"></div>
+
+</div>
+
+<!-- ===========================
+HEADER
+=========================== -->
+
+<header>
+
+    <div class="logo">
+
+        <i class="fa-solid fa-camera-retro"></i>
+
+        <h2>
+            Aurora Gallery
+        </h2>
+
+    </div>
+
+    <nav>
+
+        <ul>
+
+            <li>
+                <a href="#home">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="#gallery">
+                    Gallery
+                </a>
+            </li>
+
+            <li>
+                <a href="#favorites">
+                    Favorites
+                </a>
+            </li>
+
+            <li>
+                <a href="#footer">
+                    Contact
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+<!-- ===========================
+HERO
+=========================== -->
+
+<section
+class="hero"
+id="home">
+
+    <div
+    class="hero-content">
+
+        <h1>
+
+            Explore The
+
+            Aurora Gallery
+
+        </h1>
+
+        <p>
+
+            A premium responsive
+            image gallery with
+            categories, search,
+            favorites and
+            lightbox support.
+
+        </p>
+
+        <button
+        onclick="document.getElementById('gallery').scrollIntoView({behavior:'smooth'})">
+
+            Explore Gallery
+
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ===========================
+SEARCH
+=========================== -->
+
+<section
+class="search-section">
+
+    <div
+    class="search-box">
+
+        <i
+        class="fa-solid fa-magnifying-glass"></i>
+
+        <input
+
+        type="text"
+
+        id="searchInput"
+
+        placeholder="Search Images...">
+
+    </div>
+
+</section>
+
+<!-- ===========================
+FILTER BUTTONS
+=========================== -->
+
+<section
+class="filters">
+
+<button
+class="filter-btn active"
+data-filter="all">
+
+All
+
+</button>
+
+<button
+class="filter-btn"
+data-filter="nature">
+
+Nature
+
+</button>
+
+<button
+class="filter-btn"
+data-filter="city">
+
+City
+
+</button>
+
+<button
+class="filter-btn"
+data-filter="animals">
+
+Animals
+
+</button>
+
+<button
+class="filter-btn"
+data-filter="cars">
+
+Cars
+
+</button>
+
+<button
+class="filter-btn"
+data-filter="space">
+
+Space
+
+</button>
+
+</section>
+
+<!-- ===========================
+GALLERY START
+=========================== -->
+
+<section
+id="gallery"
+class="gallery-container">
+<!-- ===========================
+NATURE IMAGES
+=========================== -->
+
+<div
+class="gallery-item nature"
+data-title="Mountain View">
+
+    <img
+
+    src="https://picsum.photos/id/10/1200/800"
+
+    alt="Mountain View"
+
+    loading="lazy">
+
+    <div class="overlay">
+
+        <h3>
+            Mountain View
+        </h3>
+
+        <div class="icons">
+
+            <button
+            class="view-btn">
+
+                <i class="fa-solid fa-eye"></i>
+
+            </button>
+
+            <button
+            class="fav-btn">
+
+                <i class="fa-solid fa-heart"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div
+class="gallery-item nature"
+data-title="Forest Lake">
+
+    <img
+
+    src="https://picsum.photos/id/11/1200/800"
+
+    alt="Forest Lake"
+
+    loading="lazy">
+
+    <div class="overlay">
+
+        <h3>
+            Forest Lake
+        </h3>
+
+        <div class="icons">
+
+            <button class="view-btn">
+                <i class="fa-solid fa-eye"></i>
+            </button>
+
+            <button class="fav-btn">
+                <i class="fa-solid fa-heart"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div
+class="gallery-item nature"
+data-title="River Valley">
+
+    <img
+
+    src="https://picsum.photos/id/1015/1200/800"
+
+    alt="River Valley"
+
+    loading="lazy">
+
+    <div class="overlay">
+
+        <h3>
+            River Valley
+        </h3>
+
+        <div class="icons">
+
+            <button class="view-btn">
+                <i class="fa-solid fa-eye"></i>
+            </button>
+
+            <button class="fav-btn">
+                <i class="fa-solid fa-heart"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ===========================
+CITY IMAGES
+=========================== -->
+
+<div
+class="gallery-item city"
+data-title="City Lights">
+
+    <img
+
+    src="https://picsum.photos/id/1040/1200/800"
+
+    alt="City Lights"
+
+    loading="lazy">
+
+    <div class="overlay">
+
+        <h3>
+            City Lights
+        </h3>
+
+        <div class="icons">
+
+            <button class="view-btn">
+                <i class="fa-solid fa-eye"></i>
+            </button>
+
+            <button class="fav-btn">
+                <i class="fa-solid fa-heart"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div
+class="gallery-item city"
+data-title="Modern Buildings">
+
+    <img
+
+    src="https://picsum.photos/id/1043/1200/800"
+
+    alt="Modern Buildings"
+
+    loading="lazy">
+
+    <div class="overlay">
+
+        <h3>
+            Modern Buildings
+        </h3>
+
+        <div class="icons">
+
+            <button class="view-btn">
+                <i class="fa-solid fa-eye"></i>
+            </button>
+
+            <button class="fav-btn">
+                <i class="fa-solid fa-heart"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div
+class="gallery-item city"
+data-title="Urban Skyline">
+
+    <img
+
+    src="https://picsum.photos/id/1031/1200/800"
+
+    alt="Urban Skyline"
+
+    loading="lazy">
+
+    <div class="overlay">
+
+        <h3>
+            Urban Skyline
+        </h3>
+
+        <div class="icons">
+
+            <button class="view-btn">
+                <i class="fa-solid fa-eye"></i>
+            </button>
+
+            <button class="fav-btn">
+                <i class="fa-solid fa-heart"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ===========================
+ANIMAL IMAGES
+=========================== -->
+
+<div
+class="gallery-item animals"
+data-title="Dog">
+
+    <img
+
+    src="https://picsum.photos/id/237/1200/800"
+
+    alt="Dog"
+
+    loading="lazy">
+
+    <div class="overlay">
+
+        <h3>
+            Dog
+        </h3>
+
+        <div class="icons">
+
+            <button class="view-btn">
+                <i class="fa-solid fa-eye"></i>
+            </button>
+
+            <button class="fav-btn">
+                <i class="fa-solid fa-heart"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div
+class="gallery-item animals"
+data-title="Wild Animal">
+
+    <img
+
+    src="https://picsum.photos/id/433/1200/800"
+
+    alt="Wild Animal"
+
+    loading="lazy">
+
+    <div class="overlay">
+
+        <h3>
+            Wild Animal
+        </h3>
+
+        <div class="icons">
+
+            <button class="view-btn">
+                <i class="fa-solid fa-eye"></i>
+            </button>
+
+            <button class="fav-btn">
+                <i class="fa-solid fa-heart"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div
+class="gallery-item animals"
+data-title="Forest Creature">
+
+    <img
+
+    src="https://picsum.photos/id/593/1200/800"
+
+    alt="Forest Creature"
+
+    loading="lazy">
+
+    <div class="overlay">
+
+        <h3>
+            Forest Creature
+        </h3>
+
+        <div class="icons">
+
+            <button class="view-btn">
+                <i class="fa-solid fa-eye"></i>
+            </button>
+
+            <button class="fav-btn">
+                <i class="fa-solid fa-heart"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- ===========================
+CAR IMAGES
+=========================== -->
+
+<div
+class="gallery-item cars"
+data-title="Sports Car">
+
+    <img
+
+    src="https://picsum.photos/id/1071/1200/800"
+
+    alt="Sports Car"
+
+    loading="lazy">
+
+    <div class="overlay">
+
+        <h3>
+            Sports Car
+        </h3>
+
+        <div class="icons">
+
+            <button class="view-btn">
+                <i class="fa-solid fa-eye"></i>
+            </button>
+
+            <button class="fav-btn">
+                <i class="fa-solid fa-heart"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div
+class="gallery-item cars"
+data-title="Luxury Car">
+
+    <img
+
+    src="https://picsum.photos/id/1074/1200/800"
+
+    alt="Luxury Car"
+
+    loading="lazy">
+
+    <div class="overlay">
+
+        <h3>
+            Luxury Car
+        </h3>
+
+        <div class="icons">
+
+            <button class="view-btn">
+                <i class="fa-solid fa-eye"></i>
+            </button>
+
+            <button class="fav-btn">
+                <i class="fa-solid fa-heart"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div
+class="gallery-item cars"
+data-title="Classic Vehicle">
+
+    <img
+
+    src="https://picsum.photos/id/111/1200/800"
+
+    alt="Classic Vehicle"
+
+    loading="lazy">
+
+    <div class="overlay">
+
+        <h3>
+            Classic Vehicle
+        </h3>
+
+        <div class="icons">
+
+            <button class="view-btn">
+                <i class="fa-solid fa-eye"></i>
+            </button>
+
+            <button class="fav-btn">
+                <i class="fa-solid fa-heart"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ===========================
+SPACE IMAGES
+=========================== -->
+
+<div
+class="gallery-item space"
+data-title="Galaxy">
+
+    <img
+
+    src="https://picsum.photos/id/1069/1200/800"
+
+    alt="Galaxy"
+
+    loading="lazy">
+
+    <div class="overlay">
+
+        <h3>
+            Galaxy
+        </h3>
+
+        <div class="icons">
+
+            <button class="view-btn">
+                <i class="fa-solid fa-eye"></i>
+            </button>
+
+            <button class="fav-btn">
+                <i class="fa-solid fa-heart"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div
+class="gallery-item space"
+data-title="Nebula">
+
+    <img
+
+    src="https://picsum.photos/id/1084/1200/800"
+
+    alt="Nebula"
+
+    loading="lazy">
+
+    <div class="overlay">
+
+        <h3>
+            Nebula
+        </h3>
+
+        <div class="icons">
+
+            <button class="view-btn">
+                <i class="fa-solid fa-eye"></i>
+            </button>
+
+            <button class="fav-btn">
+                <i class="fa-solid fa-heart"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div
+class="gallery-item space"
+data-title="Cosmos">
+
+    <img
+
+    src="https://picsum.photos/id/119/1200/800"
+
+    alt="Cosmos"
+
+    loading="lazy">
+
+    <div class="overlay">
+
+        <h3>
+            Cosmos
+        </h3>
+
+        <div class="icons">
+
+            <button class="view-btn">
+                <i class="fa-solid fa-eye"></i>
+            </button>
+
+            <button class="fav-btn">
+                <i class="fa-solid fa-heart"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+<!-- ===========================
+FAVORITES SECTION
+=========================== -->
+
+<section
+id="favorites"
+class="favorites-section">
+
+    <h2
+    class="favorites-title">
+
+        Favorite Images
+
+    </h2>
+
+    <div
+    id="favoriteContainer"
+    class="favorite-container">
+
+    </div>
+
+</section>
+
+<!-- ===========================
+LIGHTBOX
+=========================== -->
+
+<div
+class="lightbox"
+id="lightbox">
+
+    <button
+    class="close-btn">
+
+        <i class="fa-solid fa-xmark"></i>
+
+    </button>
+
+    <button
+    class="prev-btn">
+
+        <i class="fa-solid fa-chevron-left"></i>
+
+    </button>
+
+    <img
+    id="lightboxImage"
+    src=""
+    alt="">
+
+    <button
+    class="next-btn">
+
+        <i class="fa-solid fa-chevron-right"></i>
+
+    </button>
+
+    <div
+    class="image-counter">
+
+        <span id="currentImage">
+            1
+        </span>
+
+        /
+
+        <span id="totalImages">
+            12
+        </span>
+
+    </div>
+
+</div>
+
+<!-- ===========================
+FOOTER
+=========================== -->
+
+<footer
+id="footer">
+
+    <h3>
+
+        Aurora Gallery Pro
+
+    </h3>
+
+    <p>
+
+        Responsive Image Gallery
+        Project using HTML,
+        CSS and JavaScript.
+
+    </p>
+
+    <br>
+
+    <p>
+
+        © 2026 All Rights Reserved
+
+    </p>
+
+</footer>
+
+<!-- ===========================
+PARTICLES
+=========================== -->
+
+<div class="particle"></div>
+<div class="particle"></div>
+<div class="particle"></div>
+<div class="particle"></div>
+<div class="particle"></div>
+
+<!-- ===========================
+JAVASCRIPT
+=========================== -->
+
+<script
+src="js/script.js">
+
+</script>
+
+</body>
+
+</html>
